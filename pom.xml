@@ -108,6 +108,7 @@
 	</profiles>
 
 	<build>
+		<sourceDirectory>twitter4j-ads/src</sourceDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
