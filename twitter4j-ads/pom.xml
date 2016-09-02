@@ -3,7 +3,7 @@
 
 	<groupId>com.sprinklr</groupId>
 	<artifactId>twitter4j-ads</artifactId>
-	<version>1.0</version>
+	<version>1.1-SNAPSHOT</version>
 
 	<name>Twitter4j Ads API Implementation</name>
 	<description>Twitter4j-ads is a stable and well tested Java SDK for Twitter's Ads API, originally developed and then open sourced by one of the top social media companies building upon the Ads API (Sprinklr).</description>
@@ -30,7 +30,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/seraphimalia/twitter4j-ads.git</developerConnection>
-		<tag>v1.0</tag>
+		<tag>HEAD</tag>
 		<url>https://github.com/seraphimalia/twitter4j-ads.git</url>
 	</scm>
 
