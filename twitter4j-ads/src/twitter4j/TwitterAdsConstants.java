@@ -9,16 +9,16 @@ import java.util.concurrent.TimeUnit;
  */
 public interface TwitterAdsConstants {
 
-    String V1_PREFIX_STATS_ACCOUNTS_URI = "1/stats/accounts/";
-    String V1_PREFIX_STATS_JOB_ACCOUNTS_URI = "1/stats/jobs/accounts/";
+    String V2_PREFIX_STATS_ACCOUNTS_URI = "2/stats/accounts/";
+    String V2_PREFIX_STATS_JOB_ACCOUNTS_URI = "2/stats/jobs/accounts/";
 
-    String PREFIX_ACCOUNTS_V1 = "1/accounts/";
+    String PREFIX_ACCOUNTS_V2 = "2/accounts/";
     String TWEET_PREVIEW_PATH = "/tweet/preview/";
-    String UPLOAD_MEDIA_URL = "1.1/media/";
+    String UPLOAD_MEDIA_URL = "2/media/";
     String UPLOAD_JSON = "upload.json";
-    String PREFIX_BATCH_ACCOUNTS_V1 = "1/batch/accounts/";
+    String PREFIX_BATCH_ACCOUNTS_V2 = "2/batch/accounts/";
     String PREFIX_VIDEOS = "/videos";
-    String PREFIX_STATS_ACCOUNTS_URI = "1/stats/accounts/";
+    String PREFIX_STATS_ACCOUNTS_URI = "2/stats/accounts/";
     String PARAM_WITH_DELETED = "with_deleted";
     String GRANULARITY = "granularity";
     String PARAM_FUNDING_INSTRUMENT_IDS = "funding_instrument_ids";
@@ -287,11 +287,11 @@ public interface TwitterAdsConstants {
     String PATH_TAILORED_AUDIENCE_CHANGES = "/tailored_audience_changes/";
     String PATH_TAILORED_AUDIENCE_GLOBAL_OPT_OUT = "/tailored_audiences/global_opt_out";
 
-    String POST_TON_DATA = "https://ton.twitter.com/1.1/ton/bucket/ta_partner";
-    String POST_TON_DATA_VIDEO = "https://ton.twitter.com/1.1/ton/bucket/pro_video_api";
-    String VIDEO_CARD_URL = "https://video.twitter.com/api/v1/video_tweets";
-    String UPLOAD_VIDEO_CARD_IMAGE_URL = "https://video.twitter.com/api/v1/images";
-    String UPLOAD_VIDEO_FOR_VIDEO_CARD = "https://video.twitter.com/api/v1/videos";
+    String POST_TON_DATA = "https://ton.twitter.com/2/ton/bucket/ta_partner";
+    String POST_TON_DATA_VIDEO = "https://ton.twitter.com/2/ton/bucket/pro_video_api";
+    String VIDEO_CARD_URL = "https://video.twitter.com/api/v2/video_tweets";
+    String UPLOAD_VIDEO_CARD_IMAGE_URL = "https://video.twitter.com/api/v2/images";
+    String UPLOAD_VIDEO_FOR_VIDEO_CARD = "https://video.twitter.com/api/v2/videos";
     String TON_URL = "https://ton.twitter.com";
 
     String DEMO = "/tweet_box/create_tweet";
