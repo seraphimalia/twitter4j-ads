@@ -39,7 +39,7 @@ public class TwitterAdsPromotedTweetApiImpl implements TwitterAdsPromotedTweetAp
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter(PARAM_WITH_DELETED, withDeleted));
         if (TwitterAdUtil.isNotNullOrEmpty(lineItemId)) {
-            params.add(new HttpParameter(PARAM_LINE_ITEM_ID, lineItemId));
+            params.add(new HttpParameter(PARAM_LINE_ITEM_IDS, lineItemId));
         }
         if (count != null && count.isPresent()) {
             params.add(new HttpParameter(PARAM_COUNT, count.get()));
