@@ -21,7 +21,7 @@ import java.util.*;
 import java.util.zip.GZIPInputStream;
 
 import static twitter4j.TwitterAdsConstants.*;
-import static twitter4j.TwitterAdsConstants.V2_PREFIX_STATS_JOB_ACCOUNTS_URI;
+import static twitter4j.TwitterAdsConstants.V3_PREFIX_STATS_JOB_ACCOUNTS_URI;
 
 /**
  * User: abhay
@@ -49,7 +49,7 @@ public class TwitterAdsStatApiImpl implements TwitterAdsStatApi {
         String startTimeAsString = TwitterAdUtil.convertTimeToZuluFormatAndToUTC(startTime);
         String endTimeAsString = TwitterAdUtil.convertTimeToZuluFormatAndToUTC(endTime);
 
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V2_PREFIX_STATS_ACCOUNTS_URI + accountId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V3_PREFIX_STATS_ACCOUNTS_URI + accountId;
 
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter(GRANULARITY, granularity.toString()));
@@ -83,7 +83,7 @@ public class TwitterAdsStatApiImpl implements TwitterAdsStatApi {
         String startTimeAsString = TwitterAdUtil.convertTimeToZuluFormatAndToUTC(startTime);
         String endTimeAsString = TwitterAdUtil.convertTimeToZuluFormatAndToUTC(endTime);
 
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V2_PREFIX_STATS_JOB_ACCOUNTS_URI + accountId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V3_PREFIX_STATS_JOB_ACCOUNTS_URI + accountId;
 
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter(GRANULARITY, granularity.toString()));
@@ -114,7 +114,7 @@ public class TwitterAdsStatApiImpl implements TwitterAdsStatApi {
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter(PARAM_JOB_IDS, TwitterAdUtil.getCsv(jobIds)));
 
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V2_PREFIX_STATS_JOB_ACCOUNTS_URI + accountId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + V3_PREFIX_STATS_JOB_ACCOUNTS_URI + accountId;
 
         Type type = new TypeToken<BaseAdsListResponse<JobDetails>>() {}.getType();
         return twitterAdsClient.executeHttpListRequest(baseUrl, params, type);
