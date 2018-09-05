@@ -1,4 +1,0 @@
-rootProject.name = 'twitter4j'
-
-include 'twitter4j-ads'
-include 'twitter4j-ads-examples'

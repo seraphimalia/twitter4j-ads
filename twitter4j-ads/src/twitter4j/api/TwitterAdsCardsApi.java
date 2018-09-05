@@ -165,7 +165,7 @@ public interface TwitterAdsCardsApi {
      * @param withDeleted (optional) Specifies the number of App Download Cards to try and retrieve, up to a maximum of 1000 per distinct request.
      * @return retrieves details of ome or all App Download Cards associated with the account
      * @throws TwitterException
-     * @see <a href="https://dev.twitter.com/ads/reference/1/get/stats/accounts/%3Aaccount_id">https://dev.twitter.com/ads/reference/1/get/stats/accounts/%3Aaccount_id</a>
+     * @see <a href="https://dev.twitter.com/ads/reference/3/get/stats/accounts/%3Aaccount_id">https://dev.twitter.com/ads/reference/3/get/stats/accounts/%3Aaccount_id</a>
      */
     BaseAdsResponse<TwitterLeadGenerationStat> getTwitterLeadGenerationStat(String accountId, String cardId, String startTime, Optional<String> endTime,
                                                                             Optional<String> granularity, Optional<String> metric, Optional<Boolean> withDeleted)
