@@ -31,7 +31,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
                                                                                  Optional<Boolean> withDeleted, Optional<String> cursor)
             throws TwitterException {
         TwitterAdUtil.ensureNotNull(accountId, "AccountId");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCES;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCES;
         List<HttpParameter> params = new ArrayList<>();
         if (count != null && count.isPresent() && count.get() < 1000) {
             params.add(new HttpParameter("count", count.get()));
@@ -49,7 +49,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
     public BaseAdsResponse<TailoredAudience> getTailoredAudienceForId(String accountId, String tailoredAudienceId) throws TwitterException {
         TwitterAdUtil.ensureNotNull(accountId, "AccountId");
         TwitterAdUtil.ensureNotNull(tailoredAudienceId, "tailoredAudienceId");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE + tailoredAudienceId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE + tailoredAudienceId;
         Type type = new TypeToken<BaseAdsResponse<TailoredAudience>>() {}.getType();
         return twitterAdsClient.executeHttpRequest(baseUrl, null, type, HttpVerb.GET);
     }
@@ -58,7 +58,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
     public BaseAdsResponse<TailoredAudience> deleteTailoredAudience(String accountId, String tailoredAudienceId) throws TwitterException {
         TwitterAdUtil.ensureNotNull(accountId, "AccountId");
         TwitterAdUtil.ensureNotNull(tailoredAudienceId, "tailoredAudienceId");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE + tailoredAudienceId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE + tailoredAudienceId;
         Type type = new TypeToken<BaseAdsResponse<TailoredAudience>>() {}.getType();
         return twitterAdsClient.executeHttpRequest(baseUrl, null, type, HttpVerb.DELETE);
     }
@@ -69,7 +69,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
         TwitterAdUtil.ensureNotNull(accountId, "AccountId");
         TwitterAdUtil.ensureNotNull(name, "name");
         TwitterAdUtil.ensureNotNull(tailoredAudienceDataType, "tailoredAudienceDataType");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE;
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter("name", name));
         params.add(new HttpParameter("list_type", tailoredAudienceDataType.name()));
@@ -82,7 +82,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
             throws TwitterException {
         TwitterAdUtil.ensureNotNull(accountId, "AccountId");
         TwitterAdUtil.ensureNotNull(tailoredAudienceId, "tailoredAudienceId");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE_CHANGES + tailoredAudienceId;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE_CHANGES + tailoredAudienceId;
         Type type = new TypeToken<BaseAdsResponse<TailoredAudienceChangeInfo>>() {}.getType();
         return twitterAdsClient.executeHttpRequest(baseUrl, null, type, HttpVerb.GET);
     }
@@ -95,7 +95,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
         TwitterAdUtil.ensureNotNull(tailoredAudienceId, "tailoredAudienceId");
         TwitterAdUtil.ensureNotNull(bucketLocation, "bucketLocation");
         TwitterAdUtil.ensureNotNull(tailoredAudienceOperation, "tailoredAudienceOperation");
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE_CHANGES;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE_CHANGES;
         List<HttpParameter> params = new ArrayList<>();
         params.add(new HttpParameter("account_id", accountId));
         params.add(new HttpParameter("tailored_audience_id", tailoredAudienceId));
@@ -118,7 +118,7 @@ public class TwitterAdsAudienceApiImpl implements TwitterAdsAudienceApi {
         if (nextCursor != null && nextCursor.isPresent()) {
             params.add(new HttpParameter("cursor", nextCursor.get()));
         }
-        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V3 + accountId + PATH_TAILORED_AUDIENCE_CHANGES;
+        String baseUrl = twitterAdsClient.getBaseAdsAPIUrl() + PREFIX_ACCOUNTS_V4 + accountId + PATH_TAILORED_AUDIENCE_CHANGES;
         Type type = new TypeToken<BaseAdsResponse<TailoredAudienceChangeInfo>>() {}.getType();
         return twitterAdsClient.executeHttpRequest(baseUrl, params.toArray(new HttpParameter[params.size()]), type, HttpVerb.GET);
     }

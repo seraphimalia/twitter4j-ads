@@ -9,16 +9,16 @@ import java.util.concurrent.TimeUnit;
  */
 public interface TwitterAdsConstants {
 
-    String V3_PREFIX_STATS_ACCOUNTS_URI = "3/stats/accounts/";
-    String V3_PREFIX_STATS_JOB_ACCOUNTS_URI = "3/stats/jobs/accounts/";
+    String V4_PREFIX_STATS_ACCOUNTS_URI = "4/stats/accounts/";
+    String V4_PREFIX_STATS_JOB_ACCOUNTS_URI = "4/stats/jobs/accounts/";
 
-    String PREFIX_ACCOUNTS_V3 = "3/accounts/";
+    String PREFIX_ACCOUNTS_V4 = "4/accounts/";
     String TWEET_PREVIEW_PATH = "/tweet/preview/";
-    String UPLOAD_MEDIA_URL = "3/media/";
+    String UPLOAD_MEDIA_URL = "4/media/";
     String UPLOAD_JSON = "upload.json";
-    String PREFIX_BATCH_ACCOUNTS_V3 = "3/batch/accounts/";
+    String PREFIX_BATCH_ACCOUNTS_V4 = "4/batch/accounts/";
     String PREFIX_VIDEOS = "/videos";
-    String PREFIX_STATS_ACCOUNTS_URI = "3/stats/accounts/";
+    String PREFIX_STATS_ACCOUNTS_URI = "4/stats/accounts/";
     String PARAM_WITH_DELETED = "with_deleted";
     String GRANULARITY = "granularity";
     String PARAM_FUNDING_INSTRUMENT_IDS = "funding_instrument_ids";
@@ -143,7 +143,7 @@ public interface TwitterAdsConstants {
     /**
      * For Twitter Audience Platform
      */
-    String PATH_IAB_CATEGORIES = "3/iab_categories/";
+    String PATH_IAB_CATEGORIES = "4/iab_categories/";
     String PATH_APP_LIST = "/app_lists/";
     String PARAM_ADVERTISER_DOMAIN = "advertiser_domain";
     String PARAM_CATEGORIES = "categories";
@@ -247,30 +247,30 @@ public interface TwitterAdsConstants {
 
     String PATH_CAMPAIGN = "/campaigns/";
     String PATH_FUNDING_INSTRUMENTS = "/funding_instruments/";
-    String PATH_BIDDING_RULES = "3/bidding_rules";
+    String PATH_BIDDING_RULES = "4/bidding_rules";
     String PATH_PROMOTED_TWEETS = "/promoted_tweets/";
     String PATH_PROMOTED_ACCOUNTS = "/promoted_accounts/";
     String PATH_PROMOTABLE_USERS = "/promotable_users/";
     String PATH_REACH_ESTIMATE = "/reach_estimate/";
     String PATH_LINE_ITEMS = "/line_items/";
     String PATH_TARGETING_CRITERIA = "/targeting_criteria/";
-    String PATH_TARGETING_CRITERIA_LOCATION = "3/targeting_criteria/locations";
-    String PATH_TARGETING_CRITERIA_INTERESTS = "3/targeting_criteria/interests";
-    String PATH_TARGETING_CRITERIA_PLATFORMS = "3/targeting_criteria/platforms";
-    String PATH_TARGETING_CRITERIA_PLATFORM_VERSIONS = "3/targeting_criteria/platform_versions";
-    String PATH_TARGETING_CRITERIA_DEVICES = "3/targeting_criteria/devices";
-    String PATH_TARGETING_CRITERIA_APP_STORE_CATEGORIES = "3/targeting_criteria/app_store_categories";
-    String PATH_TARGETING_CRITERIA_NETWORK_OPERATORS = "3/targeting_criteria/network_operators/";
-    String PATH_TARGETING_CRITERIA_EVENT = "3/targeting_criteria/events";
-    String PATH_TARGETING_LANGUAGES = "3/targeting_criteria/languages";
+    String PATH_TARGETING_CRITERIA_LOCATION = "4/targeting_criteria/locations";
+    String PATH_TARGETING_CRITERIA_INTERESTS = "4/targeting_criteria/interests";
+    String PATH_TARGETING_CRITERIA_PLATFORMS = "4/targeting_criteria/platforms";
+    String PATH_TARGETING_CRITERIA_PLATFORM_VERSIONS = "4/targeting_criteria/platform_versions";
+    String PATH_TARGETING_CRITERIA_DEVICES = "4/targeting_criteria/devices";
+    String PATH_TARGETING_CRITERIA_APP_STORE_CATEGORIES = "4/targeting_criteria/app_store_categories";
+    String PATH_TARGETING_CRITERIA_NETWORK_OPERATORS = "4/targeting_criteria/network_operators/";
+    String PATH_TARGETING_CRITERIA_EVENT = "4/targeting_criteria/events";
+    String PATH_TARGETING_LANGUAGES = "4/targeting_criteria/languages";
     String PATH_TAILORED_AUDIENCES = "/tailored_audiences";
     String PATH_TARGETING_SUGGESTIONS = "/targeting_suggestions/";
-    String PATH_TV_SHOWS = "3/targeting_criteria/tv_shows/";
-    String PATH_TV_MARKETS = "3/targeting_criteria/tv_markets/";
-    String PATH_TV_CHANNELS = "3/targeting_criteria/tv_channels/";
-    String PATH_TV_GENRES = "3/targeting_criteria/tv_genres/";
-    String PATH_BEHAVIORS = "3/targeting_criteria/behaviors/";
-    String PATH_BEHAVIORS_TAXONOMY = "3/targeting_criteria/behavior_taxonomies/";
+    String PATH_TV_SHOWS = "4/targeting_criteria/tv_shows/";
+    String PATH_TV_MARKETS = "4/targeting_criteria/tv_markets/";
+    String PATH_TV_CHANNELS = "4/targeting_criteria/tv_channels/";
+    String PATH_TV_GENRES = "4/targeting_criteria/tv_genres/";
+    String PATH_BEHAVIORS = "4/targeting_criteria/behaviors/";
+    String PATH_BEHAVIORS_TAXONOMY = "4/targeting_criteria/behavior_taxonomies/";
     String PATH_APP_DOWNLOAD_CARDS = "/cards/app_download/";
     String PATH_IMAGE_APP_DOWNLOAD_CARDS = "/cards/image_app_download/";
     String PATH_VIDEO_APP_DOWNLOAD_CARDS = "/cards/video_app_download/";
@@ -287,11 +287,11 @@ public interface TwitterAdsConstants {
     String PATH_TAILORED_AUDIENCE_CHANGES = "/tailored_audience_changes/";
     String PATH_TAILORED_AUDIENCE_GLOBAL_OPT_OUT = "/tailored_audiences/global_opt_out";
 
-    String POST_TON_DATA = "https://ton.twitter.com/3/ton/bucket/ta_partner";
-    String POST_TON_DATA_VIDEO = "https://ton.twitter.com/3/ton/bucket/pro_video_api";
-    String VIDEO_CARD_URL = "https://video.twitter.com/api/v3/video_tweets";
-    String UPLOAD_VIDEO_CARD_IMAGE_URL = "https://video.twitter.com/api/v3/images";
-    String UPLOAD_VIDEO_FOR_VIDEO_CARD = "https://video.twitter.com/api/v3/videos";
+    String POST_TON_DATA = "https://ton.twitter.com/4/ton/bucket/ta_partner";
+    String POST_TON_DATA_VIDEO = "https://ton.twitter.com/4/ton/bucket/pro_video_api";
+    String VIDEO_CARD_URL = "https://video.twitter.com/api/v4/video_tweets";
+    String UPLOAD_VIDEO_CARD_IMAGE_URL = "https://video.twitter.com/api/v4/images";
+    String UPLOAD_VIDEO_FOR_VIDEO_CARD = "https://video.twitter.com/api/v4/videos";
     String TON_URL = "https://ton.twitter.com";
 
     String DEMO = "/tweet_box/create_tweet";
